@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,300;1,400;1,500&family=Libre+Franklin:wght@100&display=swap');
+/*font-family: 'Kanit', sans-serif;
+font-family: 'Libre Franklin', sans-serif;*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(250, 228, 220);
+}
+
+.navbar{
+    background: coral;
+}
+
+.navbar-brand{
+    color: whitesmoke;
+}
+
+.nav-item{
+    display: flex;
+}
+
+.nav-link{
+    color: whitesmoke !important;
+    text-transform: capitalize;
+}
+
+.navbar-toggler{
+    border-color: whitesmoke !important;
+    border-style: dashed;
+    padding: 8px;
+}
+
+.fa-database{
+    color: whitesmoke;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+.contenido h1{
+    font-size: 35px;
+    margin-left: 5px;
+}
+
+.contenido p{
+    font-size: 18px;
+    margin-left: 5px;
+    font-family: Kamit;
+}
+
+.imagen {
+    flex-basis: 100%;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    padding: 5px;
+    background-color: coral;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    text-transform: capitalize;
+}
+
+footer .redes{
+    color: white;
+    font-size: 20px;
+}
+
+footer .redes:hover{
+    color: lightgrey;
+}
+
+@media (min-width: 720px){  
+    .contenedor {
+        height: 100vh;
+        justify-content: space-evenly;
+        margin-left: 20px;
+    }
+    .contenido {
+        flex-basis: calc(50% - 10px);
+        border: 5px solid coral;
+        text-align: center;
+        margin-right: 20px;
+    }
+    
+    .imagen {
+        flex-basis: calc(50% - 10px);
+    }
+}
