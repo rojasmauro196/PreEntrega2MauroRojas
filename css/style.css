@@ -71,52 +71,57 @@ body{
 }
 
 .contenedor2{
+    display: flex;
     width: 100%;
     height: auto;
     border: 5px solid coral;
-    display: flex
 }
 
 .cartas{
-    max-height: 1000px;
-    width: 100%;
     border: 5px solid coral;
     text-align: center;
 }
 
-.cartas .up{
+.box{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+.box img{
+    max-width: 100%;
+}
+
+.box p{
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 0;
+}
+
+.up{
     text-transform: capitalize;
 }
 
-.cartas .p{
-    text-align: end;
+.cap{
+    font-family: Karit;
 }
 
 .cartas-im1{
     height: 400px;
-    width: 100%;
     background-image: url(../img/man-5409355_1280.jpg);
-    background-size: cover;
-    background-position: top;
-    background-color: darkgray;
 }
 
 .cartas-im2{
     height: 400px;
-    width: 100%;
     background-image: url(../img/handsome-guy-880740_1280.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: darkgray;
 }
 
 .cartas-im3{
     height: 400px;
-    width: 100%;
     background-image: url(../img/business-3311102_1280.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: white;
 }
 
 footer{
@@ -133,6 +138,7 @@ footer p{
 footer .redes{
     color: white;
     font-size: 20px;
+    justify-content: space-around;
 }
 
 footer .redes:hover{
