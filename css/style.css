@@ -68,7 +68,55 @@ body{
 
 .imagen img {
     max-width: 100%;
+}
+
+.contenedor2{
+    width: 100%;
     height: auto;
+    border: 5px solid coral;
+    display: flex;
+}
+
+.cartas{
+    min-height: 400px;
+    width: 100%;
+    border: 5px solid coral;
+    text-align: center;
+}
+
+.cartas .up{
+    text-transform: capitalize;
+}
+
+.cartas .p{
+    text-align: end;
+}
+
+.cartas-im1{
+    height: 400px;
+    width: 100%;
+    background-image: url(../img/man-5409355_1280.jpg);
+    background-size: cover;
+    background-position: top;
+    background-color: darkgray;
+}
+
+.cartas-im2{
+    height: 400px;
+    width: 100%;
+    background-image: url(../img/handsome-guy-880740_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: darkgray;
+}
+
+.cartas-im3{
+    height: 400px;
+    width: 100%;
+    background-image: url(../img/business-3311102_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: white;
 }
 
 footer{
@@ -91,7 +139,7 @@ footer .redes:hover{
     color: lightgrey;
 }
 
-@media (min-width: 720px){  
+@media only screen and (min-width: 720px){  
     .contenedor {
         height: 100vh;
         justify-content: space-evenly;
@@ -106,5 +154,11 @@ footer .redes:hover{
     
     .imagen {
         flex-basis: calc(50% - 10px);
+    }
+}
+
+@media only screen and (min-width: 220px) and (max-width: 890px) {
+    .contenedor2{
+        display: block;
     }
 }
