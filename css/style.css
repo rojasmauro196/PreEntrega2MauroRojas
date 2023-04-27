@@ -88,6 +88,7 @@ body{
     background-size: cover;
     background-position: center;
     background-color: white;
+    margin: 0;
 }
 
 .box img{
@@ -97,7 +98,6 @@ body{
 .box p{
     background-color: #f2f2f2;
     padding: 10px;
-    margin: 0;
 }
 
 .up{
